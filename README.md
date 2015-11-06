@@ -1,5 +1,7 @@
 # SimpleToolbarSlider
 
+[![Build Status](https://api.travis-ci.org/ppamorim/SimpleToolbarSlider.svg?branch=master)](https://travis-ci.org/ppamorim/SimpleToolbarSlider)
+
 This is a simple example to create a scrollable Toolbar, no external library is necessary.
 
 # But and Fresco?
