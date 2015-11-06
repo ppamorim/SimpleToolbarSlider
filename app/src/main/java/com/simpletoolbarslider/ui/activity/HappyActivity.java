@@ -110,7 +110,7 @@ public class HappyActivity extends AppCompatActivity {
     }
 
     @Override public int positionFirstItemVisible() {
-      return recyclerView == null ? 0 : ((LinearLayoutManager)recyclerView.getLayoutManager())
+      return recyclerView == null ? 0 : ((LinearLayoutManager) recyclerView.getLayoutManager())
           .findFirstVisibleItemPosition();
     }
   };
