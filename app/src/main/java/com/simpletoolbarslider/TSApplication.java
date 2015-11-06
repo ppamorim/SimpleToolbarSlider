@@ -18,7 +18,7 @@ public class TSApplication extends Application {
   }
 
   /**
-   * Finish the pipeline of the Fresco ImageLoader.
+   * Finish the Pipeline of the Fresco ImageLoader.
    */
   @Override public void onTerminate() {
     Fresco.shutDown();
