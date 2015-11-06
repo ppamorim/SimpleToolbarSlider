@@ -30,7 +30,8 @@ public class Happy {
   @Override public boolean equals(Object object) {
     if(object instanceof Happy) {
       Happy happy = ((Happy) object);
-      return happy.title.equals(title) && happy.image.equals(image);
+      return (happy.title.equals(title) && happy.image.equals(image))
+          && happy.hashCode() == hashCode();
     }
     return false;
   }
