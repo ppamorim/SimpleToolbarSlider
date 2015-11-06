@@ -5,7 +5,7 @@ import com.facebook.drawee.backends.pipeline.Fresco;
 
 /**
  * The main configuration of the application,
- * this is needed to config the Fresco ImageLoader
+ * necessary to config the Fresco ImageLoader.
  */
 public class TSApplication extends Application {
 

@@ -13,7 +13,7 @@ import com.simpletoolbarslider.R;
 
 /**
  * A simple ViewHolder that is used to handle the recycle
- * of the RecyclerView, uses the model Happy.
+ * of the RecyclerView. Uses the model Happy.
  */
 public class HappyViewHolder extends RecyclerView.ViewHolder {
 
@@ -29,8 +29,8 @@ public class HappyViewHolder extends RecyclerView.ViewHolder {
   /**
    * A static method to create a new instance of HappyViewHolder
    * and perform the bind of the views.
-   * @param parent
-   * @return
+   * @param parent Layout of the adapter
+   * @return New Instance of the ViewHolder(HappyViewHolder)
    */
   public static HappyViewHolder newInstance(View parent) {
     SimpleDraweeView image = (SimpleDraweeView) parent.findViewById(R.id.image);

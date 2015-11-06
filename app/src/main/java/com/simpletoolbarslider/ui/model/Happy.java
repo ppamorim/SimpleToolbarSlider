@@ -1,7 +1,7 @@
 package com.simpletoolbarslider.ui.model;
 
 /**
- * A simple model to represent a item of the list.
+ * A simple model to represent an item of the list.
  */
 public class Happy {
 

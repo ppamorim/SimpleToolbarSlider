@@ -38,7 +38,7 @@ public class HappyAdapter extends RecyclerView.Adapter<HappyViewHolder> {
   }
 
   /**
-   * Adds a instance of Happy model at the list
+   * Adds an instance of Happy model at the list
    * @param happy Instance of the item that's will be added.
    */
   public void addHappy(Happy happy) {
@@ -61,7 +61,7 @@ public class HappyAdapter extends RecyclerView.Adapter<HappyViewHolder> {
   }
 
   /**
-   * Clear the all items, useful when device is with low memory.
+   * Clear the all the items, useful when device is with low memory.
    */
   public void clear() {
     if(happies != null) {
