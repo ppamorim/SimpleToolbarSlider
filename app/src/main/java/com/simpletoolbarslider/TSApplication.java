@@ -24,4 +24,5 @@ public class TSApplication extends Application {
     Fresco.shutDown();
     super.onTerminate();
   }
+
 }

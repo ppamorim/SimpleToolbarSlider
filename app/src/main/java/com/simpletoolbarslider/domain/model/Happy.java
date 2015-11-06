@@ -1,14 +1,16 @@
-package com.simpletoolbarslider.ui.model;
+package com.simpletoolbarslider.domain.model;
 
 /**
  * A simple model to represent an item of the list.
  */
 public class Happy {
 
+  private int id;
   private String title;
   private String image;
 
-  public Happy(String title, String image) {
+  public Happy(int id, String title, String image) {
+    this.id = id;
     this.title = title;
     this.image = image;
   }
@@ -21,8 +23,13 @@ public class Happy {
     return image;
   }
 
+  /**
+   * Every model has your won hashCode, in this case can be used
+   * the id of the object to be used on a HashMap/Set.
+   * @return idt.of the objec.
+   */
   @Override public int hashCode() {
-    return title.hashCode() & image.hashCode();
+    return id;
   }
 
   /**

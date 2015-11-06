@@ -9,9 +9,9 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.animation.AccelerateInterpolator;
 import com.simpletoolbarslider.R;
+import com.simpletoolbarslider.domain.model.Happy;
 import com.simpletoolbarslider.ui.adapter.HappyAdapter;
 import com.simpletoolbarslider.ui.listener.ToolbarSliderListener;
-import com.simpletoolbarslider.ui.model.Happy;
 import java.util.ArrayList;
 
 /**
@@ -86,7 +86,7 @@ public class HappyActivity extends AppCompatActivity {
   private ArrayList<Happy> stubData() {
     ArrayList<Happy> happies = new ArrayList<>(100);
     for (int i = 0; i < 100; i++) {
-      happies.add(new Happy(TITLE, URL));
+      happies.add(new Happy(i, TITLE, URL));
     }
     return happies;
   }

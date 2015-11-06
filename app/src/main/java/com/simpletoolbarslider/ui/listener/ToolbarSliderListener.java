@@ -9,7 +9,7 @@ import android.support.v7.widget.RecyclerView;
 public class ToolbarSliderListener extends RecyclerView.OnScrollListener {
 
   private int scrolledDistance = 0;
-  private boolean controlsVisible = true;
+  private boolean contentVisible = true;
   private int maxDistance = 0;
   private ToolbarSliderCallback toolbarSliderCallback;
 
@@ -41,20 +41,20 @@ public class ToolbarSliderListener extends RecyclerView.OnScrollListener {
   @Override public void onScrolled(RecyclerView recyclerView, int distanceX, int distanceY) {
     super.onScrolled(recyclerView, distanceX, distanceY);
 
-    if (scrolledDistance > maxDistance && controlsVisible) {
-      controlsVisible = false;
+    if (scrolledDistance > maxDistance && contentVisible) {
+      contentVisible = false;
       scrolledDistance = 0;
       toolbarSliderCallback.status(false);
-    } else if ((scrolledDistance < -maxDistance && !controlsVisible)
+    } else if ((scrolledDistance < -maxDistance && !contentVisible)
         || toolbarSliderCallback.positionFirstItemVisible() == 0) {
-      controlsVisible = true;
+      contentVisible = true;
       scrolledDistance = 0;
       toolbarSliderCallback.status(true);
     }
 
     boolean distanceBiggerThanZero = distanceY > 0;
-    if ((controlsVisible && distanceBiggerThanZero)
-        || (!controlsVisible && !distanceBiggerThanZero)) {
+    if ((contentVisible && distanceBiggerThanZero)
+        || (!contentVisible && !distanceBiggerThanZero)) {
       scrolledDistance += distanceY;
     }
 

@@ -4,7 +4,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import com.simpletoolbarslider.R;
-import com.simpletoolbarslider.ui.model.Happy;
+import com.simpletoolbarslider.domain.model.Happy;
 import java.util.ArrayList;
 
 public class HappyAdapter extends RecyclerView.Adapter<HappyViewHolder> {
