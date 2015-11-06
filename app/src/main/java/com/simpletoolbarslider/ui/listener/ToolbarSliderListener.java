@@ -53,7 +53,7 @@ public class ToolbarSliderListener extends RecyclerView.OnScrollListener {
     }
 
     boolean distanceBiggerThanZero = distanceY > 0;
-    if((controlsVisible && distanceBiggerThanZero)
+    if ((controlsVisible && distanceBiggerThanZero)
         || (!controlsVisible && !distanceBiggerThanZero)) {
       scrolledDistance += distanceY;
     }

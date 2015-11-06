@@ -21,6 +21,10 @@ public class Happy {
     return image;
   }
 
+  @Override public int hashCode() {
+    return title.hashCode() & image.hashCode();
+  }
+
   /**
    * Verify whether the instance of the model has
    * the params of the compared model.

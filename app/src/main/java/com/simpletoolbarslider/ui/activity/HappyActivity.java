@@ -44,7 +44,7 @@ public class HappyActivity extends AppCompatActivity {
   }
 
   @Override public void onLowMemory() {
-    ((HappyAdapter)recyclerView.getAdapter()).clear();
+    ((HappyAdapter) recyclerView.getAdapter()).clear();
     super.onLowMemory();
   }
 
@@ -63,7 +63,7 @@ public class HappyActivity extends AppCompatActivity {
   private void configToolbar() {
     setSupportActionBar(toolbar);
     ActionBar actionBar = getSupportActionBar();
-    if(actionBar != null) {
+    if (actionBar != null) {
       actionBar.setTitle(R.string.app_name);
     }
   }
@@ -85,7 +85,7 @@ public class HappyActivity extends AppCompatActivity {
    */
   private ArrayList<Happy> stubData() {
     ArrayList<Happy> happies = new ArrayList<>(100);
-    for(int i = 0; i < 100; i++) {
+    for (int i = 0; i < 100; i++) {
       happies.add(new Happy(TITLE, URL));
     }
     return happies;
@@ -110,8 +110,8 @@ public class HappyActivity extends AppCompatActivity {
     }
 
     @Override public int positionFirstItemVisible() {
-      return recyclerView == null ?
-          0 : ((LinearLayoutManager)recyclerView.getLayoutManager()).findFirstVisibleItemPosition();
+      return recyclerView == null ? 0 : ((LinearLayoutManager)recyclerView.getLayoutManager())
+          .findFirstVisibleItemPosition();
     }
   };
 

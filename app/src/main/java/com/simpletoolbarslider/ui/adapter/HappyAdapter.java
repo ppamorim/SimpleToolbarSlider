@@ -27,7 +27,7 @@ public class HappyAdapter extends RecyclerView.Adapter<HappyViewHolder> {
   }
 
   @Override public void onBindViewHolder(HappyViewHolder happyViewHolder, int position) {
-    if(happies != null) {
+    if (happies != null) {
       Happy happy = happies.get(position);
       happyViewHolder.update(happy.getImage(), happy.getTitle());
     }
@@ -42,10 +42,10 @@ public class HappyAdapter extends RecyclerView.Adapter<HappyViewHolder> {
    * @param happy Instance of the item that's will be added.
    */
   public void addHappy(Happy happy) {
-    if(happies == null) {
+    if (happies == null) {
       happies = new ArrayList<>();
     }
-    if(!happies.contains(happy)) {
+    if (!happies.contains(happy)) {
       happies.add(happy);
     }
   }
@@ -55,7 +55,7 @@ public class HappyAdapter extends RecyclerView.Adapter<HappyViewHolder> {
    * @param happy Instance of the item that's will be removed.
    */
   public void removeHappy(Happy happy) {
-    if(happies != null) {
+    if (happies != null) {
       happies.remove(happy);
     }
   }
@@ -64,7 +64,7 @@ public class HappyAdapter extends RecyclerView.Adapter<HappyViewHolder> {
    * Clear the all the items, useful when device is with low memory.
    */
   public void clear() {
-    if(happies != null) {
+    if (happies != null) {
       happies.clear();
       happies = null;
     }
