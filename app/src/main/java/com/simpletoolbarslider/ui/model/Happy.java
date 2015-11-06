@@ -28,8 +28,11 @@ public class Happy {
    * @return If item is equals or not.
    */
   @Override public boolean equals(Object object) {
-    Happy happy = ((Happy) object);
-    return happy.title.equals(title) && happy.image.equals(image);
+    if(object instanceof Happy) {
+      Happy happy = ((Happy) object);
+      return happy.title.equals(title) && happy.image.equals(image);
+    }
+    return false;
   }
 
 }
